@@ -12,7 +12,7 @@ function mostrar()
 	altura = prompt ("Ingrese altura del triangulo");
 	altura = parseInt (altura);
 
-	perimetro = base + base + base;
+	perimetro = 3 * base;
 	superficie = base * altura / 2;
 
 	alert ("El perimetro del triangulo es... " + perimetro + ' y su superficie es...' + superficie  )
