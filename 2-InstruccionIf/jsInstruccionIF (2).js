@@ -1,5 +1,5 @@
 function mostrar()
-{
+if {
 //tomo la edad  
 
 
