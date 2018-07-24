@@ -9,13 +9,88 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
  */
 function CalcularPrecio () 
-{
+{	
+/*
+	var	cantidad;
+
+	var importeLamparas = 35;
+
+	var precioDescuento;
+
+	var ingresosBrutos;
+
+	var marca;
+
+				cantidad 	= document.getElementById('Cantidad').value;
+				cantidad = parseInt (cantidad); //tengo que parsearlo después de ingresar la cantidad
+
+				marca 		= document.getElementById('Marca').value;
+
+
+				importeLamparas = cantidad * 35;
+
+
+		switch (cantidad)
+				{
+			case 1:
+					precioDescuento = importeLamparas * 1
+					break;
+			case 2:
+			  	  precioDescuento = importeLamparas * 1
+			  	  break;
+			case 3: 
+			  		switch (marca)
+				{
+			case 'ArgentinaLuz':
+					precioDescuento = importeLamparas * 0.85
+					break;
+			case 'FelipeLamparas':
+					precioDescuento = importeLamparas * 0.90
+					break;
+			default:
+					precioDescuento = importeLamparas * 0.95
+					break;
+			  		} // SWITCH PARA EL PUNTO D
+			  		break;
+			case 4:
+			  			switch (marca)
+					{
+			case 'ArgentinaLuz':
+			case 'FelipeLamparas':
+					precioDescuento = importeLamparas * 0.75
+					break;
+			default:
+					precioDescuento = importeLamparas * 0.80
+					break;
+					} // SWITCH PARA EL PUNTO C 
+			case 5:
+					switch (marca)
+					{
+			case 'ArgentinaLuz':
+					precioDescuento = importeLamparas * 0.60
+					break;
+			default:
+					precioDescuento = importeLamparas * 0.70
+					break;
+					} // SWITCH PARA EL PUNTO B
+			case 6:
+					precioDescuento = importeLamparas * 0.50
+					break;
+
+
+
+					}
+			document.getElementById('precioDescuento').value = precioDescuento;
+ 					}
+		*/
+
+		/*
+
 	var cantidad; //cantidad de lamparas
 
 	var importeLamparas = 35;	// importe de = La cantidad * 35 (precio de las lamparas)
 
-	var precioDescuento;   	//el importe del descuento
-	var precioBruto;		// el precio final con descuento
+	var precioDescuento;   	//Precio final con descuento
 
 	var ingresosBrutos;		//Cuando pasa de 120 $
  
@@ -26,120 +101,37 @@ function CalcularPrecio ()
 	cantidad = parseInt (cantidad);
 
 	marca = document.getElementById('Marca').value;
+	importeLamparas = cantidad * 35; //De acá sale el importe de las lamparas
 
-
-
- 	precioBruto = cantidad * 35;
-
-		 switch (cantidad)
-		{
-
-			case 	1:
-				precioDescuento = precioBruto * 1;
-				break;
-			case 	2:
-				precioDescuento = precioBruto * 1 ;
-				break;
-			case	3:
-				switch (marca)
-						{
-					case 'ArgentinaLuz':
-					precioDescuento = precioBruto * 0,85;
-					break;	
-						}
-				break;
-			case	4:
-
-
-		}
-			document.getElementById('precioDescuento').value= precioDescuento;
-
-
-
-		}
-
-
-
-
-// PARCIAL 1 - 3 4 - 5 ---> 4 Hacer con if, 5 hacer con switch y al revés
-// RECUPERATORIO 1 - 3 4 - 5 ---> 4 Hacer con if, 5 hacer con switch y al revés
-//f.iluminación: Hacer con if, con if que tienen switch, con switch que tienen if y sólo switch
-
-
-	
-
-
-	/*	if (cantidad>=6) //PUNTO A
+		if (cantidad>=6) //PUNTO A
 
 			{
-				importeLamparas = cantidad * 35; //De acá sale el importe de las lamparas
-
 				precioDescuento = importeLamparas * 0.50; //el descuento de las lamparas 
-
-				precioBruto 	= importeLamparas - precioDescuento; // el precio con descuento, precio final
-
-				document.getElementById('precioDescuento').value= precioBruto;
 			}
 							//PUNTO A TERMINA ACÁ.
 
 			else if (cantidad==5&&marca=='ArgentinaLuz')
 
 			{
-				importeLamparas = cantidad * 35; //De acá sale el importe de las lamparas
-
-				precioDescuento = importeLamparas * 0.40; //el descuento de las lamparas 
-
-				precioBruto 	= importeLamparas - precioDescuento; // el precio con descuento, precio final
-
-				document.getElementById('precioDescuento').value= precioBruto;
-
+				precioDescuento = importeLamparas * 0.60; //el descuento de las lamparas 
 			}
 
 			else if (cantidad==5&&marca!='ArgentinaLuz') //Se puede declarar sin !=
 
-
-				{
-				importeLamparas = cantidad * 35; //De acá sale el importe de las lamparas
-
-				precioDescuento = importeLamparas * 0.30; //el descuento de las lamparas 
-
-				precioBruto 	= importeLamparas - precioDescuento; // el precio con descuento, precio final
-
-				document.getElementById('precioDescuento').value= precioBruto;
-
+			{
+				precioDescuento = importeLamparas * 0.70; //el descuento de las lamparas 
 			}
-
-								
-
 								//PUNTO B TERMINA ACÁ.
-
-
 			else if (cantidad==4&&(marca=='ArgentinaLuz'||marca=='FelipeLamparas'))
 			
 			{
-
-				importeLamparas = cantidad * 35; //De acá sale el importe de las lamparas
-
-				precioDescuento = importeLamparas * 0.25; //el descuento de las lamparas 
-
-				precioBruto 	= importeLamparas - precioDescuento; // el precio con descuento, precio final
-
-				document.getElementById('precioDescuento').value= precioBruto;
+				precioDescuento = importeLamparas * 0.75; //el descuento de las lamparas 
 			}
 
 			else if (cantidad==4)
 
 			{	
-
-				importeLamparas = cantidad * 35; //De acá sale el importe de las lamparas
-
-				precioDescuento = importeLamparas * 0.20; //el descuento de las lamparas 
-
-				precioBruto 	= importeLamparas - precioDescuento; // el precio con descuento, precio final
-
-				document.getElementById('precioDescuento').value= precioBruto;
-							 
-
+				precioDescuento = importeLamparas * 0.80; //el descuento de las lamparas 
 			}
 
 			///////////////// TERMINO PUNTO C ////////////////////
@@ -147,73 +139,39 @@ function CalcularPrecio ()
 			else if (cantidad==3&&marca=='ArgentinaLuz')
 		
 			{
-
-				importeLamparas = cantidad * 35; //De acá sale el importe de las lamparas
-
-				precioDescuento = importeLamparas * 0.15; //el descuento de las lamparas 
-
-				precioBruto 	= importeLamparas - precioDescuento; // el precio con descuento, precio final
-
-				document.getElementById('precioDescuento').value= precioBruto;
-							 
-
+				precioDescuento = importeLamparas * 0.85; //el descuento de las lamparas 
 			}
 
 			else if (cantidad==3&&marca=='FelipeLamparas')
 			{
 
-				importeLamparas = cantidad * 35; //De acá sale el importe de las lamparas
-
-				precioDescuento = importeLamparas * 0.10; //el descuento de las lamparas 
-
-				precioBruto 	= importeLamparas - precioDescuento; // el precio con descuento, precio final
-
-				document.getElementById('precioDescuento').value= precioBruto;
-							 
-
+				precioDescuento = importeLamparas * 0.90; //el descuento de las lamparas 
 			}
 
 			else if (cantidad==3)
 			{
-
-				importeLamparas = cantidad * 35; //De acá sale el importe de las lamparas
-
-				precioDescuento = importeLamparas * 0.05; //el descuento de las lamparas 
-
-				precioBruto 	= importeLamparas - precioDescuento; // el precio con descuento, precio final
-
-				document.getElementById('precioDescuento').value= precioBruto;
-							 
-
-		}
+				precioDescuento = importeLamparas * 0.95; //el descuento de las lamparas 
+			}
 
 						////////////// TERMINO PUNTO D ////////////
 
-			if (precioBruto>=120)
+			if (precioDescuento>=120)
 
 			{
-				ingresosBrutos = precioBruto * 0.10;
+				ingresosBrutos = precioDescuento * 0.10;
 
-				precioBruto = precioBruto + ingresosBrutos;
+				ingresosBrutos = precioDescuento + ingresosBrutos;
 
 				alert ('Usted debe pagar IIBB por un monto de ' + ingresosBrutos);
-
-				
-				document.getElementById('precioDescuento').value= precioBruto;
-
-			
-
+			}
+			document.getElementById('precioDescuento').value= precioDescuento;
 
 			}
 
+		*/
 
 
 
-
-
-
-				}
-
-
-
-*/
+	// PARCIAL 1 - 3 4 - 5 ---> 4 Hacer con if, 5 hacer con switch y al revés
+	// RECUPERATORIO 1 - 3 4 - 5 ---> 4 Hacer con if, 5 hacer con switch y al revés
+	//f.iluminación: Hacer con if, con if que tienen switch, con switch que tienen if y sólo switch
