@@ -2,7 +2,8 @@ function mostrar()
 {
 	var mesDelAño = document.getElementById('mes').value;
 
-	switch (mesDelAño)
+
+	switch (mesDelAño) 
 
 	{
 		case 'Enero':
@@ -24,8 +25,9 @@ function mostrar()
 			break;	
 		
 
-
-
+			// break: para la sentencia case perteneciente a esta declaración
+			//default: Si no pasó ningún 'case' se ejecuta el 'default'. -Siempre poner al último y no es necesario un 'break' para esta declaración
+			// == igualdad simple === igualdad exacta. 
 	}
 
 
