@@ -17,8 +17,8 @@ function CalcularPrecio ()
 	var precioDescuento;   	//el importe del descuento
 	var precioLamparas;		// el precio final con descuento
 
-	var ingresosBrutos;
-
+	var ingresosBrutos;		//Cuando pasa de 120 $
+ 
 	var marca;	//la marca 'ArgentinaLuz', etc
 
 	cantLamparas = document.getElementById('Cantidad').value; //Ingreso la cantidad de lamparas.
@@ -53,7 +53,7 @@ function CalcularPrecio ()
 
 			}
 
-			else if (cantLamparas==5&&marca!='ArgentinaLuz')
+			else if (cantLamparas==5&&marca!='ArgentinaLuz') //Se puede declarar sin !=
 
 
 				{
