@@ -1,20 +1,8 @@
 function mostrar()
 {
-	var planetas;
-		planetas = prompt ('Ingrese un planeta que esté dentro del sistema solar. Su nombre debe estar en MINUSCULAS.')
-		switch (planetas)
-		{
-			case 'tierra':
-				if (planetas=='tierra') 
-				{
-					alert ('Acá vivimos ')
-				}
-				break;
-			case 'venus'
-			
-				
+
 }		
-}
+
 /*
 	var planetas;
 

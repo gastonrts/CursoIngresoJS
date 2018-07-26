@@ -1,51 +1,38 @@
 function mostrar()
 {	
-	var  numeroUno;
-	var  numeroDos;
-	var  resultado;
-
-	numeroUno = prompt ('Ingrese un número');
-	numoroDos = prompt ('Ingrese un número');
-
-		switch (numeroUno)
-		{	case 1:
-			switch (numeroDos)
-	
-				{
-				resultado = numeroUno + numeroDos;
-				alert ('Su número es ' + resultado)
-			}
-		}
 
 }
 
+
+
+
 	/* EJERCICIO SOLO CON IF - INICIO
 	var numeroUno;
-	var numoroDos;
+	var numeroDos;
 	var resultado;
 
 	numeroUno = prompt ('Ingrese un número');
-	numoroDos = prompt ('Ingrese un número');
+	numeroDos = prompt ('Ingrese un número');
 
-	if (numeroUno==numoroDos)
+	if (numeroUno==numeroDos)
 	{
-		resultado = numeroUno + numoroDos;
+		resultado = numeroUno + numeroDos;
 		alert ('Su número es ' + resultado)
 	}
 
-		else if (numeroUno>numoroDos)
+		else if (numeroUno>numeroDos)
 	{
 		numoroUno =	parseInt (numeroUno);
-		numoroDos = parseInt (numoroDos);
-		resultado = numoroUno - numoroDos;
+		numeroDos = parseInt (numeroDos);
+		resultado = numoroUno - numeroDos;
 		alert ('Su número es ' + resultado);
 	}
 
 		else 
 	{
 		numeroUno = parseInt (numeroUno);
-		numoroDos = parseInt (numoroDos);
-		resultado = numeroUno + numoroDos;
+		numeroDos = parseInt (numeroDos);
+		resultado = numeroUno + numeroDos;
 		alert ('Su número es ' + resultado);
 
 		if (resultado>10)
@@ -55,3 +42,70 @@ function mostrar()
 	}
 
 	EJERCICIO SOLO CON IF - FINALIZA */
+
+	/*	var  numeroUno;
+	var  numeroDos;
+	var  resultado;
+
+	numeroUno = prompt ('Ingrese un número');
+	numeroDos = prompt ('Ingrese un número');
+
+		switch (numeroUno)
+		{	case numeroUno:
+		switch (numeroDos)
+			{
+			case numeroDos:	
+			{
+				resultado = numeroUno + numeroDos;
+				alert ('Su número es ' + resultado)
+			}
+			}
+			}*/ //EJERCICIO SOLO SWITCH
+				/* //SWITCH CON IF	
+				
+	var  numeroUno;
+	var  numeroDos;
+	var  resultado;
+
+	numeroUno = prompt ('Ingrese un número');
+	numeroDos = prompt ('Ingrese un número');
+
+	switch (numeroUno)
+	{		
+			case numeroUno:
+	switch (numeroDos)
+			{case numeroDos:	
+				if (numeroUno==numeroDos)
+					{	
+						resultado = numeroUno + numeroDos;
+						alert ('El numero es' + resultado)
+			
+					}
+			}
+			case numeroUno:
+	switch (numeroDos)
+			{
+			case numeroDos:	
+				if (numeroUno<numeroDos)
+					{			
+						numeroUno = parseInt (numeroUno);
+						numeroDos = parseInt (numeroDos);
+						resultado = numeroUno + numeroDos;
+						alert ('El numero es ' + resultado)
+					}
+			}
+			case numeroUno:
+	switch (numeroDos)
+			{
+			case numeroDos:	
+				if (numeroUno>numeroDos)
+					{			
+						numeroUno = parseInt (numeroUno);
+						numeroDos = parseInt (numeroDos);
+						resultado = numeroUno - numeroDos;
+						alert ('El numero es ' + resultado)
+					}
+			}
+			
+			break;
+	}*/ //SWITCH CON IF
