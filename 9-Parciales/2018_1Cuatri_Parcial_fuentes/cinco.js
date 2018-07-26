@@ -1,27 +1,19 @@
 function mostrar()
 {
 	var planetas;
-
-		planetas = prompt ('Ingrese un planeta. Debe estar escrito en minusculas.');
-
-		if (planetas==='tierra')
+		planetas = prompt ('Ingrese un planeta que esté dentro del sistema solar. Su nombre debe estar en MINUSCULAS.')
+		switch (planetas)
 		{
-			alert ('Acá vivimos');
-		}
-
-		else if (planetas==='venus'||planetas==='mercurio')
-		{
-			alert ('Acá hace más calor');
-		}
-		else if (planetas==='jupiter'||planetas==='saturno'||planetas==='urano'||planetas=='neptuno')
-		{
-			alert ('Acá hace mas frio');
-		}
-
-		else 
-		{
-			alert (planetas + ' NO ES UN PLANETA VALIDO');
-		}
+			case 'tierra':
+				if (planetas=='tierra') 
+				{
+					alert ('Acá vivimos ')
+				}
+				break;
+			case 'venus'
+			
+				
+}		
 }
 /*
 	var planetas;
@@ -45,5 +37,29 @@ function mostrar()
 			default:
 			alert ('No es un planeta valido')
 			break;
+		}
+*/
+
+/*	var planetas;
+
+		planetas = prompt ('Ingrese un planeta. Debe estar escrito en minusculas.');
+
+		if (planetas==='tierra')
+		{
+			alert ('Acá vivimos');
+		}
+
+		else if (planetas==='venus'||planetas==='mercurio')
+		{
+			alert ('Acá hace más calor');
+		}
+		else if (planetas==='jupiter'||planetas==='saturno'||planetas==='urano'||planetas=='neptuno')
+		{
+			alert ('Acá hace mas frio');
+		}
+
+		else 
+		{
+			alert (planetas + ' NO ES UN PLANETA VALIDO');
 		}
 */

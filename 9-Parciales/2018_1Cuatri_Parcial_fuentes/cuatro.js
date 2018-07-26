@@ -1,6 +1,25 @@
 function mostrar()
 {	
+	var  numeroUno;
+	var  numeroDos;
+	var  resultado;
+
+	numeroUno = prompt ('Ingrese un número');
+	numoroDos = prompt ('Ingrese un número');
+
+		switch (numeroUno)
+		{	case 1:
+			switch (numeroDos)
 	
+				{
+				resultado = numeroUno + numeroDos;
+				alert ('Su número es ' + resultado)
+			}
+		}
+
+}
+
+	/* EJERCICIO SOLO CON IF - INICIO
 	var numeroUno;
 	var numoroDos;
 	var resultado;
@@ -35,6 +54,4 @@ function mostrar()
 		}
 	}
 
-	
-
-}
+	EJERCICIO SOLO CON IF - FINALIZA */
