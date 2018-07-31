@@ -14,12 +14,13 @@ function mostrar()
 	{
 			contador ++;
 
-			numero = prompt ('Ingrese un número'+contador);
+			numero = prompt ('Ingrese un número ' + contador);
 			numero = parseInt (numero);
+
 			if (contador==1)
 			{
-				numero = maximo;
-				numero = minimo
+				maximo = numero;
+				minimo = numero;
 			}
 			if (numero>maximo)
 			{
@@ -29,9 +30,15 @@ function mostrar()
 			{
 				minimo =numero;
 			}
-
 			respuesta = prompt ('¿Queres continuar?');
+			if (isNaN(numero))
+			{
+			alert ('Ingreso un número');
+			numero = prompt ('Ingrese un número ' + contador);
+			numero = parseInt (numero);
+			}
 
+			respuesta = prompt ('¿Querés continuar?'); // revisar y cambiar para que al ingresar una letra se deje de ejecutar.
 	
 	}
 
@@ -42,5 +49,25 @@ function mostrar()
 
 
 }//FIN DE LA FUNCIÓN
-
+/*
 // EJERRCICIO 12 DEL TP
+// bandera para poner un contador // if (contador==0){
+contador++
+maximo=numero;
+minimo=numero;
+}
+else {
+	if (numero>maximo)
+	maximo = numero;
+		}
+	if (numero<minimo)
+	{
+	minimo = numero;
+	}
+
+
+
+
+
+
+*/

@@ -13,7 +13,14 @@ function mostrar()
 		numero = parseInt (numero);
 		acumulador += numero; //Sumo el numero 
 		
+		while (isNaN(numero))
+		{
+		alert ('¡Ingreso una letra!')
+		numero = prompt ('Ingrese un número');
+		numero = parseInt (numero);
 
+
+		}
 
 	}
 
@@ -26,3 +33,4 @@ document.getElementById('promedio').value=acumulador/5; //muestro el promedio
 // suma+=num || suma=suma+num
 
 //banderas
+// while (!isNaN(numero)) PARA PEDIR UNA LETRA Y QUE NO SE PUEDA INGRESAR UN NÙMERO
