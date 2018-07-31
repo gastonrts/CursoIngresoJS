@@ -15,7 +15,7 @@ function ComenzarIngreso ()
  	var sueldoBruto;
  	var numeroLegajo;
  	var nacionalidad;
- 	var respuesta = 'Si';
+ 	var respuesta = 'si';
 
  				/*
  				nacionalidad	= prompt ('Ingrese su nacionalidad siendo: A para argentinos, E para extranjeros y N para nacionalizados');
@@ -40,11 +40,11 @@ function ComenzarIngreso ()
 	}
 		if (sexo=='m')
 		{
-			sexo == 'masculino';
+			sexo = 'masculino';
 		}
 		else if (sexo=='f')
 		{
-			sexo == 'femenino';
+			sexo = 'femenino';
 		}
 	estadoCivil = prompt ('Ingrese su Estado Civil 1) SOLTERO 2) CASADO 3) DIVORCIADOS 4) VIUDOS');
 
