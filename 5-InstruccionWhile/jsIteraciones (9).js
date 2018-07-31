@@ -12,13 +12,13 @@ function mostrar()
 
 	while(respuesta!='no')
 	{
-			contador ++;
 
 			numero = prompt ('Ingrese un número ' + contador);
 			numero = parseInt (numero);
 
-			if (contador==1)
-			{
+			if (contador==0)
+			{	
+				contador++;
 				maximo = numero;
 				minimo = numero;
 			}
@@ -30,7 +30,6 @@ function mostrar()
 			{
 				minimo =numero;
 			}
-			respuesta = prompt ('¿Queres continuar?');
 			if (isNaN(numero))
 			{
 			alert ('Ingreso un número');
